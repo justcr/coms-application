@@ -1,0 +1,10 @@
+.dashboard-container {
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+    border-radius: 10%;
+    position: absolute;
+    top: 70%;
+    Left: 50%;
+    transform: translate(-50%, -70% );
+}

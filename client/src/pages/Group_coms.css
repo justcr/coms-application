@@ -1,0 +1,643 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.group-callbox-body {
+  width: auto;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.group-callbox-container {
+  /* border-color: white;
+  border-style: dashed; */
+  width: 1200px;
+  height: 725px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* <----------------------------------------------CALLBOX-LABELS----------------------------------------------------> */
+
+.callbox1-label  {
+    /* border-style: dashed;
+    border-color: yellow; */
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/group-callbox1.png);
+    background-size: contain;
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    transform: translate(-10%, -42%);
+}
+
+.callbox2-label  {
+    /* border-style: dashed;
+    border-color: yellow; */
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/group-callbox2.png);
+    background-size: contain;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+}
+
+.callbox3-label  {
+    /* border-style: dashed;
+    border-color: yellow; */
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/group-callbox3.png);
+    background-size: contain;
+    position: absolute;
+    top: 42%;
+    left: 90%;
+    transform: translate(-90%, -42%);
+}
+
+.callbox4-label  {
+    /* border-style: dashed;
+    border-color: yellow; */
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/group-callbox4.png);
+    background-size: contain;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    transform: translate(-10%, -100%);
+}
+
+.callbox5-label  {
+    /* border-style: dashed;
+    border-color: yellow; */
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/group-callbox5.png);
+    background-size: contain;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.callbox6-label  {
+    /* border-style: dashed;
+    border-color: yellow; */
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/group-callbox6.png);
+    background-size: contain;
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    transform: translate(-90%, -100%);
+}
+
+/* <----------------------------------------------CALLBOX1----------------------------------------------------> */
+
+.group-callbox1 {
+  /* border-color: red;
+  border-style: dashed; */
+  width: 300px;
+  height: 260px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translate(-0%, -0%);
+}
+
+#group-callbox1-controller {
+  width: 280px;
+  height: 220px;
+  background-color: rgb(59, 59, 59);
+  box-shadow: 0px 40px rgba(51, 51, 51, 0.658);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 4px solid rgba(102, 102, 102, 0.548);
+  border-radius: 25px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+#group-callbox1-label {
+  width: 250px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.61);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+
+#group-callbox1-backplate {
+  width: 117px;
+  height: 85px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+}
+
+div.button {
+  width: 120px;
+  height: 85px;
+  background: #dfbe04;
+  border-radius: 50%;
+  border: 3px solid #c5a803;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+div.button.on {
+  background: #dfbe04;
+  position: absolute;
+  border: 3px solid #c5a8033d;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  animation: glowing 300ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+  50% {
+    background-color: #ffff00;
+    box-shadow: 0 0 100px #ffff00;
+  }
+  100% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+}
+
+/* <----------------------------------------------CALLBOX2----------------------------------------------------> */
+
+.group-callbox2 {
+  /* border-color: red;
+  border-style: dashed; */
+  width: 300px;
+  height: 260px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+#group-callbox2-controller {
+  width: 280px;
+  height: 220px;
+  background-color: rgb(59, 59, 59);
+  box-shadow: 0px 40px rgba(51, 51, 51, 0.658);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 4px solid rgba(102, 102, 102, 0.548);
+  border-radius: 25px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+#group-callbox2-label {
+  width: 250px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.61);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+
+#group-callbox2-backplate {
+  width: 117px;
+  height: 85px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+}
+
+div.button {
+  width: 120px;
+  height: 85px;
+  background: #dfbe04;
+  border-radius: 50%;
+  border: 3px solid #c5a803;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+div.button.on {
+  background: #dfbe04;
+  position: absolute;
+  border: 3px solid #c5a8033d;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  animation: glowing 300ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+  50% {
+    background-color: #ffff00;
+    box-shadow: 0 0 100px #ffff00;
+  }
+  100% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+}
+
+/* <----------------------------------------------CALLBOX3----------------------------------------------------> */
+
+.group-callbox3 {
+  /* border-color: red;
+  border-style: dashed; */
+  width: 300px;
+  height: 260px;
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  transform: translate(-100%, -0%);
+}
+
+#group-callbox3-controller {
+  width: 280px;
+  height: 220px;
+  background-color: rgb(59, 59, 59);
+  box-shadow: 0px 40px rgba(51, 51, 51, 0.658);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 4px solid rgba(102, 102, 102, 0.548);
+  border-radius: 25px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+#group-callbox3-label {
+  width: 250px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.61);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+
+#group-callbox3-backplate {
+  width: 117px;
+  height: 85px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+}
+
+div.button {
+  width: 120px;
+  height: 85px;
+  background: #dfbe04;
+  border-radius: 50%;
+  border: 3px solid #c5a803;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+div.button.on {
+  background: #dfbe04;
+  position: absolute;
+  border: 3px solid #c5a8033d;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  animation: glowing 300ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+  50% {
+    background-color: #ffff00;
+    box-shadow: 0 0 100px #ffff00;
+  }
+  100% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+}
+
+/* <----------------------------------------------CALLBOX4----------------------------------------------------> */
+
+.group-callbox4 {
+  /* border-color: red;
+  border-style: dashed; */
+  width: 300px;
+  height: 260px;
+  position: absolute;
+  top: 81%;
+  left: 0%;
+  transform: translate(-0%, -81%);
+}
+
+#group-callbox4-controller {
+  width: 280px;
+  height: 220px;
+  background-color: rgb(59, 59, 59);
+  box-shadow: 0px 40px rgba(51, 51, 51, 0.658);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 4px solid rgba(102, 102, 102, 0.548);
+  border-radius: 25px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+#group-callbox4-label {
+  width: 250px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.61);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+
+#group-callbox4-backplate {
+  width: 117px;
+  height: 85px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+}
+
+div.button {
+  width: 120px;
+  height: 85px;
+  background: #dfbe04;
+  border-radius: 50%;
+  border: 3px solid #c5a803;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+div.button.on {
+  background: #dfbe04;
+  position: absolute;
+  border: 3px solid #c5a8033d;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  animation: glowing 300ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+  50% {
+    background-color: #ffff00;
+    box-shadow: 0 0 100px #ffff00;
+  }
+  100% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+}
+
+/* <----------------------------------------------CALLBOX5----------------------------------------------------> */
+
+.group-callbox5 {
+  /* border-color: red;
+  border-style: dashed; */
+  width: 300px;
+  height: 260px;
+  position: absolute;
+  top: 81%;
+  left: 50%;
+  transform: translate(-50%, -81%);
+}
+
+#group-callbox5-controller {
+  width: 280px;
+  height: 220px;
+  background-color: rgb(59, 59, 59);
+  box-shadow: 0px 40px rgba(51, 51, 51, 0.658);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 4px solid rgba(102, 102, 102, 0.548);
+  border-radius: 25px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+#group-callbox5-label {
+  width: 250px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.61);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+
+#group-callbox5-backplate {
+  width: 117px;
+  height: 85px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+}
+
+div.button {
+  width: 120px;
+  height: 85px;
+  background: #dfbe04;
+  border-radius: 50%;
+  border: 3px solid #c5a803;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+div.button.on {
+  background: #dfbe04;
+  position: absolute;
+  border: 3px solid #c5a8033d;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  animation: glowing 300ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+  50% {
+    background-color: #ffff00;
+    box-shadow: 0 0 100px #ffff00;
+  }
+  100% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+}
+
+/* <----------------------------------------------CALLBOX6----------------------------------------------------> */
+
+.group-callbox6 {
+  /* border-color: red;
+  border-style: dashed; */
+  width: 300px;
+  height: 260px;
+  position: absolute;
+  top: 81%;
+  left: 100%;
+  transform: translate(-100%, -81%);
+}
+
+#group-callbox6-controller {
+  width: 280px;
+  height: 220px;
+  background-color: rgb(59, 59, 59);
+  box-shadow: 0px 40px rgba(51, 51, 51, 0.658);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 4px solid rgba(102, 102, 102, 0.548);
+  border-radius: 25px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+}
+
+#group-callbox6-label {
+  width: 250px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.61);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+}
+
+#group-callbox6-backplate {
+  width: 117px;
+  height: 85px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -47%);
+}
+
+div.button {
+  width: 120px;
+  height: 85px;
+  background: #dfbe04;
+  border-radius: 50%;
+  border: 3px solid #c5a803;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+div.button.on {
+  background: #dfbe04;
+  position: absolute;
+  border: 3px solid #c5a8033d;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -43%);
+  animation: glowing 300ms infinite;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+  50% {
+    background-color: #ffff00;
+    box-shadow: 0 0 100px #ffff00;
+  }
+  100% {
+    background-color: #dfbe04;
+    box-shadow: 0 0 10px #dfbe04;
+  }
+}
