@@ -4,8 +4,8 @@ import Homepage from './pages/Homepage';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
-import Group_coms from './pages/Group_coms';
-import User_coms from './pages/User_coms';
+import Groupcallbox from './pages/Groupcallbox';
+import Usercallbox from './pages/Usercallbox';
 import Errorpage from './pages/Errorpage';
 
 
@@ -18,8 +18,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/Dashboard" element={<Dashboard />} />
-        <Route path="/Group_coms" element={<Group_coms />} />
-        <Route path="/User_coms" element={<User_coms />} />
+        <Route path="/Groupcallbox" element={<Groupcallbox />} />
+        <Route path="/Usercallbox" element={<Usercallbox />} />
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </Router>

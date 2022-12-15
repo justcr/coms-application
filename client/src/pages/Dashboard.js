@@ -5,7 +5,11 @@ function Dashboard() {
   return (
     <div className="body">
       <div className="logo"></div>
-      <div className="dashboard-container"></div>
+      <div className="dashboard-container">
+        <div className="profile-container">
+          <div className="profile-icon"></div>
+        </div>
+      </div>
     </div>  
   )
 }
