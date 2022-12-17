@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+button {
+  width: 200px;
+  height: 200px;
+  border-style: dashed;
+  border-color: red;
+
+}
+
+.flash {
+  animation: flash 1s linear infinite;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #000;
+  }
+  100% {
+    background-color: #fff;
+  }
+}
