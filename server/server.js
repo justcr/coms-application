@@ -12,7 +12,7 @@ io.on("connection", (socket) => {
 
   socket.on("buttonClicked", (data) => {
     console.log("received data:", data);
-    io.emit("buttonClicked", data);
+    socket.broadcast.emit("buttonClicked", data);
   });
 
   socket.on("disconnect", () => {
@@ -20,4 +20,6 @@ io.on("connection", (socket) => {
   });
 });
 
-httpServer.listen(3000);
+httpServer.listen(5000, () => {
+  console.log("Server started on http://localhost:5000");
+});
