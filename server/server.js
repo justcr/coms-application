@@ -15,11 +15,12 @@ io.on("connection", (socket) => {
     socket.broadcast.emit("buttonClicked", data);
   });
 
+
   socket.on("disconnect", () => {
     // console.log("user disconnected");
   });
 });
 
-httpServer.listen(process.env.PORT || 5001, () => {
+httpServer.listen(5001, () => {
   console.log("Server started on http://localhost:5001");
 });

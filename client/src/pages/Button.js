@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('https://coms-application-server.herokuapp.com');
- 
+const socket = io('http://localhost:5001');
 
 function Button() {
   const glowingButtons = () => {
@@ -11,7 +10,7 @@ function Button() {
     setTimeout(() => {
       button.classList.remove('glowing');
     }, 30000);
-  } 
+  }
   const handleClick = () => {
     socket.emit('buttonClicked', { data: 'some data' });
     glowingButtons();
