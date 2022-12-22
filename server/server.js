@@ -8,7 +8,7 @@ const io = new Server(httpServer, {
   },
 });
 io.on("connection", (socket) => {
-  console.log("a user connected");
+  // console.log("a user connected");
 
   socket.on("buttonClicked", (data) => {
     console.log("received data:", data);
@@ -16,10 +16,10 @@ io.on("connection", (socket) => {
   });
 
   socket.on("disconnect", () => {
-    console.log("user disconnected");
+    // console.log("user disconnected");
   });
 });
 
 httpServer.listen(5001, () => {
-  console.log("Server started on http://localhost:5000");
+  console.log("Server started on http://localhost:5001");
 });

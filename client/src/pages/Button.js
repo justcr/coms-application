@@ -4,29 +4,27 @@ import io from 'socket.io-client';
 const socket = io('http://localhost:5001');
 
 function Button() {
-  const flashButtons = () => {
+  const glowingButtons = () => {
     const button = document.querySelector('button');
-    button.classList.add('flash');
+    button.classList.add('glowing');
     setTimeout(() => {
-      button.classList.remove('flash');
-    }, 2000);
+      button.classList.remove('glowing');
+    }, 30000);
   }
   const handleClick = () => {
     socket.emit('buttonClicked', { data: 'some data' });
-    flashButtons();
+    glowingButtons();
   };
 
   useEffect(() => {
     socket.on("buttonClicked", (data) => {
       console.log(data);
-      flashButtons();
+      glowingButtons();
     })
   }, [])
 
   return (
-    <button onClick={handleClick}>
-      Click me!
-    </button>
+    <button onClick={handleClick}></button>
   );
 }
 
