@@ -20,6 +20,6 @@ io.on("connection", (socket) => {
   });
 });
 
-httpServer.listen(5001, () => {
+httpServer.listen(process.env.PORT || 5001, () => {
   console.log("Server started on http://localhost:5001");
 });
